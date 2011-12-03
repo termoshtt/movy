@@ -5,6 +5,7 @@ local capi = {
     client = client,
     screen = screen
 }
+module("movy.move")
 
 local placelist = { 
     center = {x=1,y=1},
@@ -85,4 +86,3 @@ function down(c,screen)
     move(c,0.0,sgeom.height)
 end
 
-module("movy.move")
