@@ -1,0 +1,8 @@
+* movy *
+the library allows you to move 
+client window with freedom on awesome.
+
+Install:
+cp movy $XIM_CONFIG_HOME/awesome/
+
+AUTHOR : Toshiki Teramrura <toshiki.teramura@gmail.com>
