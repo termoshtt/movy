@@ -47,11 +47,11 @@ function move(c,dx,dy,screen)
     if math.abs(dx) <= 1.0 then dx = dx * sgeom.width / 10.0 end
     if math.abs(dy) <= 1.0 then dy = dy * sgeom.height / 10.0 end
 
-    local x = sgeom.x + cgeom.x + dx
-    local y = sgeom.y + cgeom.y + dy
+    local x = cgeom.x + dx
+    local y = cgeom.y + dy
 
-    if x < 0 then x = 0 end
-    if y < 0 then y = 0 end
+    if x < sgeom.x then x = sgeom.x end
+    if y < sgeom.y then y = sgeom.y end
 
     if x + width > sgeom.x + sgeom.width then
         x = sgeom.x + sgeom.width - width
